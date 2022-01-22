@@ -1,0 +1,16 @@
+[
+  {
+    "numero": 25,
+    "nombre": "Pikachu",
+    "tipo": "eléctrico",
+    "rating": 4
+
+  },
+  {
+    "numero": 7,
+    "nombre": "Squirtle",
+    "tipo": "agua",
+    "rating": 5
+
+  }
+]

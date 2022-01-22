@@ -1,0 +1,105 @@
+<p-dialog
+  [(visible)]="display"
+  (onHide)="onModalClose()"
+  position="right"
+  [transitionOptions]="'400ms'"
+  [modal]="true"
+  [dismissableMask]="true"
+  [draggable]="false"
+  [resizable]="false"
+  >
+  <ng-template pTemplate="header">
+    Nuevo Pokemon
+  </ng-template>
+    <form [formGroup]="newPokemonForm">
+      <div class="row">
+        <div class="col-12">
+          <h4>Nombre</h4>
+          <div class="p-float-label">
+            <label for="name">Escribe el nombre</label>
+            <input type="text" id="name" pInputText formControlName="name">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h4>Apellidos</h4>
+          <div class="p-float-label">
+            <label for="lastName">Escribe los apellidos</label>
+            <input type="text" id="lastName" pInputText formControlName="lastName">
+          </div>
+        </div>
+      </div>
+      <div class="row p-2">
+        <h4>Género</h4>
+        <div class="flex flex-column">
+          <div class="radio-buttons">
+            <input type="radio" id="male" name="genre" value="male" label="male" formControlName="genre">
+            <label for="male">
+              Masculino
+            </label>
+          </div>
+          <div class="radio-buttons">
+            <input type="radio" id="female" name="genre" value="female" label="female" formControlName="genre">
+            <label for="female">Femenino</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h4>Fecha de nacimiento</h4>
+          <div class="p-float-label">
+            <p-calendar formControlName="birthDate" dateFormat="dd/mm/yyyy" icon="pi pi-angle-down" placeholder="Escriba la fecha de nacimiento"></p-calendar>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-12">
+          <h4>Teléfono</h4>
+          <div class="p-float-label">
+            <label for="phone">Escriba el teléfono</label>
+            <input type="text" id="phone" pInputText formControlName="phone">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h4>Email</h4>
+          <div class="p-float-label">
+            <label for="birthDate">Escriba el email</label>
+            <input type="email" id="email" pInputText formControlName="email">
+          </div>
+        </div>
+      </div> -->
+
+      <div class="row img-input">
+        <div class="col-12">
+          <h4>Foto del Pokemon</h4>
+            <div class="p-float-label">
+
+                <label for="image">
+                  <span class="pi pi-image"></span>
+                  Añadir imagen
+                </label>
+                <input
+                  type="file"
+                  name="image"
+                  id="image"
+                  class="form-control"
+                  formControlName="image">
+
+            </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-12">
+            <button pButton
+                type="button"
+                label="Cancelar"
+                (click)="onModalClose()"></button>
+            <button pButton type="submit" label="Crear Paciente"></button>
+        </div>
+    </div>
+  </form>
+</p-dialog>
+

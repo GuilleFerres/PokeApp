@@ -1,0 +1,21 @@
+:host ::ng-deep p-menubarsub.p-element {
+  width: 100%!important;
+}
+
+:host ::ng-deep .p-menubar {
+  background: linear-gradient(to bottom, #4ca872, #3f888f);
+
+  border: none;
+}
+
+:host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link span{
+  color: whitesmoke!important;
+  font-size: 1.1rem;
+}
+
+
+:host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link span:hover {
+  color: #3f888f!important;
+}
+
+/* #3CB371 */

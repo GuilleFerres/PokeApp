@@ -1,0 +1,63 @@
+.chracter-photo {
+  border: 1px solid rgb(235, 232, 232);
+  border-radius: 3px;
+  height: 100%;
+  grid-column: 2;
+}
+h1{
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(194, 193, 193);
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  margin-top:0;
+}
+.text {
+  grid-column: span 3;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+.new-poke-btn {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 2fr 5fr;
+  grid-template-rows: 200px repeat(auto-fill, 320px) 300px;
+  gap: 5.5rem 2.5rem 1rem;
+  margin-top: 2rem;
+}
+:host ::ng-deep p-slidemenu {
+  grid-row: span 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+:host ::ng-deep .p-slidemenu {
+  height: 100%!important;
+}
+.p-button-outlined {
+  grid-column-end: 5;
+}
+.btn {
+  height: 2.5rem;
+  max-width: 163px;
+}
+:host ::ng-deep button.p-button:not(button.p-button:first-of-type){
+  width: 171px;
+  background-color: #F7F8F9;
+  color: var(--primary-color);
+}
+:host ::ng-deep.p-float-label label[for="search"]{
+  line-height: 0!important;
+}
+
+
+
+:host ::ng-deep button.p-button:first-of-type {
+  width: 163px;
+  background-color: var(--app-secondary-color);
+  margin-right: 1rem;
+  border:none!important;
+}
+
+:host ::ng-deep button.p-button:not(button.p-button:first-of-type){
+  border-color: var(--app-primary-color);
+  color: var(--app-primary-color);
+}

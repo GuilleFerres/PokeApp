@@ -1,0 +1,38 @@
+<app-menu></app-menu>
+<div class="new-poke-btn">
+  <p-slideMenu [model]="items" styleClass="slide"></p-slideMenu>
+  <h1 class="col-offset-1 col-11">PC Bill</h1>
+  <button
+    pButton
+    type="button"
+    label="Nuevo Pokemon"
+    icon="pi pi-plus"
+    class="lg:col-offset-1 lg:col-11 btn"
+    (click)="showDialog()">
+  </button>
+
+  <button
+    pButton
+    type="button"
+    label="Nuevo Pokemon"
+    icon="pi pi-plus"
+    class="p-button-outlined lg:col-offset-1 lg:col-11 btn"
+    (click)="showDialog()">
+  </button>
+  <app-add-pokemon [display]="display" (modalClose)="onCloseModal($event)"></app-add-pokemon>
+  <div class="chracter-photo lg:col-12 col-0 text-center">
+    <img src="https://qph.fs.quoracdn.net/main-qimg-599f9047b71d1a5c01f5599447b2a8fb-lq" alt="">
+  </div>
+  <div class="lg:col-6 lg:col-offset-1 col-12 text">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempore ipsa eligendi cupiditate, a pariatur ullam, inventore facilis ratione fugit, aut modi corrupti? Atque corporis officia pariatur non, quaerat natus.
+      Nihil pariatur recusandae deleniti maiores. Modi repudiandae facere eum sunt officia, ullam id dolorem et nulla velit placeat soluta, sint eius harum doloremque corporis similique culpa necessitatibus iste blanditiis error!
+      Impedit, harum assumenda libero officia dicta animi aliquam culpa saepe. Blanditiis dolorem a suscipit rem incidunt delectus modi facilis iure deleniti, veritatis iste, asperiores, autem aliquid qui labore voluptas hic?
+    </p>
+  </div>
+</div>
+<div class="grid">
+
+
+</div>
+

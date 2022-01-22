@@ -1,0 +1,75 @@
+/* modal */
+:host ::ng-deep .p-dialog {
+  width: 455px;
+  height: 100%;
+  max-height: unset!important;
+  margin-right: 0!important;
+}
+:host ::ng-deep .p-dialog .p-dialog-header-icons{
+  display: none!important;
+}
+:host ::ng-deep .p-dialog-header {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--app-primary-color);
+}
+
+/* Form */
+h4 {
+  margin-bottom: 1rem;
+}
+
+/* Input */
+input[type="file"] {
+  opacity:0;
+}
+:host ::ng-deep .p-inputtext{
+  border-radius: var(--input-bradius)!important;
+}
+:host ::ng-deep input[type="radio"] {
+  width: 1.3rem!important;
+  margin-right: 14px;
+  accent-color: var(--app-secondary-color);
+}
+.radio-buttons {
+  display: flex;
+  align-items: center;
+}
+.radio-buttons input:checked {
+  border-color: transparent!important;
+}
+:host ::ng-deep input, p-calendar {
+  width: 377px!important;
+  height: 56px;
+}
+:host ::ng-deep .p-calendar {
+  display: unset!important;
+}
+:host ::ng-deep .p-datepicker {
+  left: -22px!important;
+}
+:host ::ng-deep div.img-input div.p-float-label {
+  border: 3px #ced4da dashed;
+  width: 377px;
+  border-radius:  var(--input-bradius);
+  cursor: pointer;
+}
+
+/* Buttons */
+:host ::ng-deep form button.p-button:first-of-type {
+  background-color: unset;
+  color: var(--cancel);
+
+}
+:host ::ng-deep form button.p-button:not(button.p-button:first-of-type){
+  background-color: var(--app-secondary-color);
+  color: white;
+}
+
+
+
+
+
+
+
+

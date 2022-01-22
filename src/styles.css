@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+}
+.grid {
+  margin:0!important;
+}
+p {
+  margin: 0;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 250px;
+  border: none;
+  border-radius: unset;
+  border-bottom: 1px #C5C5C5 solid!important;
+  margin-bottom: 1.5rem;
+  /* display: block!important; */
+}
+.search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--app-secondary-color);
+  margin-right: 14px;
+
+}
+
+:host ::ng-deep form button.p-button {
+  border:none!important;
+}

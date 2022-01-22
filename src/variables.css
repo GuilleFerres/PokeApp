@@ -1,0 +1,9 @@
+:root {
+  --app-primary-color: #4ca872;
+  --app-secondary-color: #3f888f;
+  --button-font-size: 16px;
+  --extra-font-size: 14px;
+  --btn-bradius: 16px;
+  --input-bradius: 0.5rem;
+  --cancel: #E04433;
+}
